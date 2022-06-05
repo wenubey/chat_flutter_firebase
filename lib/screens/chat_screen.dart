@@ -38,7 +38,6 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
 
-
   @override
   void initState() {
     super.initState();
@@ -120,7 +119,6 @@ class MessageStream extends StatefulWidget {
 class _MessageStreamState extends State<MessageStream> {
 
 
-
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
@@ -175,7 +173,7 @@ class MessageBubble extends StatelessWidget {
       padding: EdgeInsets.all(10.0),
       child: Column(
         crossAxisAlignment:
-            isMe ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+        isMe ? CrossAxisAlignment.end : CrossAxisAlignment.start,
         children: <Widget>[
           Text(
             sender,
